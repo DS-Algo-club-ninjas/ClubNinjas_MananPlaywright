@@ -1,0 +1,55 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Manan":
+    - /url: /app
+    - heading "Manan" [level=1]
+  - button "P"
+- heading "Welcome to Your Medical Dashboard" [level=2]
+- paragraph: Access and manage your medical triage assessments and reports from this central dashboard.
+- button "Start New Assessment"
+- button "View Previous Assessments"
+- heading "Usage Statistics" [level=3]
+- paragraph: Track your AI analysis usage and subscription status. Free tier includes 20 AI analyses per month.
+- heading "Analysis Usage" [level=3]
+- paragraph: Free tier allows 20 analyses per month
+- img
+- text: 3 of 20
+- link "Upgrade to Premium":
+  - /url: /subscription
+- img
+- heading "Recent Assessments" [level=3]
+- paragraph: You have no recent assessments.
+- button "Start your first assessment →"
+- img
+- heading "Account Settings" [level=3]
+- paragraph: Manage your account settings, preferences, and notification options.
+- button "Update settings →"
+- img
+- heading "Subscription Plans" [level=3]
+- paragraph: Upgrade to Premium for unlimited AI analyses and advanced features.
+- button "Upgrade now →"
+- img
+- heading "Assessment History" [level=3]
+- paragraph: View your previous medical triage assessments and AI-generated analysis reports.
+- button "View history →"
+- contentinfo:
+  - img
+  - heading "Manan - Medical Triage Assistant" [level=3]
+  - paragraph: A clinically robust AI-powered assistant that delivers individualized, evidence-based triage recommendations in minutes. Optimize patient outcomes with zero cognitive overload.
+  - heading "Company" [level=3]
+  - link "About Us":
+    - /url: https://www.numpyninja.com/about
+  - link "Blog":
+    - /url: https://www.numpyninja.com/blog
+  - link "Contact Us":
+    - /url: https://www.numpyninja.com/contact
+  - paragraph: © 2025 Manan - Medical Triage Assistant
+  - link "Terms":
+    - /url: https://www.numpyninja.com/terms
+  - link "Privacy":
+    - /url: https://www.numpyninja.com/privacy-policy
+- region "Notifications (F8)":
+  - list
+```

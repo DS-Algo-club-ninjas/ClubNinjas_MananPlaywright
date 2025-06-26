@@ -1,0 +1,81 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Manan":
+    - /url: /
+    - heading "Manan" [level=1]
+  - link "Home":
+    - /url: "#"
+  - link "Try Now":
+    - /url: "#"
+  - text: Pricing
+  - button "Sign In"
+- heading "Transform Your Medical Practice" [level=2]
+- paragraph: Efficiently create evidence-based medical care plans for complex patients—no need to memorize intricate diagnosis rules or interactions.
+- button "Try for free"
+- button "For Medical Professionals"
+- text: 😊
+- heading "Powerful Features" [level=2]
+- paragraph: AI-Powered Clinical Intelligence for Optimal Patient Outcomes
+- img
+- heading "Intelligent Triage Analysis" [level=3]
+- paragraph: Our AI-powered system analyzes patient symptoms, vital signs, and medical history to provide rapid, accurate triage recommendations and risk assessments based on established medical protocols.
+- img
+- heading "Real-time Document Monitoring" [level=3]
+- paragraph: Seamlessly extract and analyze medical information from documents in real-time, helping healthcare professionals quickly identify key symptoms, vital signs, and potential diagnoses.
+- img
+- heading "Clinical Decision Support" [level=3]
+- paragraph: Advanced AI algorithms assist healthcare professionals by suggesting potential diagnoses, recommending appropriate tests, and providing evidence-based care recommendations aligned with current medical guidelines.
+- heading "Health-First Approach" [level=2]
+- img
+- heading "Evidence-Based Triage" [level=3]
+- paragraph: Our triage recommendations are based on peer-reviewed research and align with the latest emergency medicine protocols and WHO guidelines.
+- img
+- heading "Smart Case Analysis" [level=3]
+- paragraph: Advanced algorithms analyze patient data comprehensively, considering symptoms, vital signs, and medical history to provide accurate triage recommendations.
+- img
+- heading "Emergency Response Support" [level=3]
+- paragraph: Rapid assessment tools help healthcare professionals quickly identify critical cases and prioritize urgent medical interventions.
+- heading "What Healthcare Professionals Say" [level=2]
+- img
+- img
+- img
+- img
+- img
+- blockquote: "\"This application triages extremely difficult cardiovascular cases really well.\""
+- text: Dr. Jagdheesh V Senior Cardiologist
+- heading "Simple Three-Step Process" [level=2]
+- paragraph: Advanced Medical Triage in 3 Simple Steps
+- text: "01"
+- heading "Input Patient Data" [level=3]
+- paragraph: Securely enter patient information including symptoms, vital signs, and medical history. Structured data formats ensure comprehensive information gathering.
+- text: "02"
+- heading "AI Clinical Analysis" [level=3]
+- paragraph: Our advanced AI engine processes patient data to provide rapid triage recommendations, risk assessments, and clinical insights based on established medical protocols and guidelines.
+- text: "03"
+- heading "Receive Clinical Insights" [level=3]
+- paragraph: Get detailed triage assessments, potential diagnoses, and recommended actions. Generate comprehensive reports for documentation and immediate clinical decision support.
+- heading "Upgrade to a Clinical Decision-Support Platform Today" [level=2]
+- paragraph: Manan empowers healthcare professionals to deliver faster, safer, and more efficient medical triage without compromising clinical accuracy.
+- button "Start Medical Triage Assessment"
+- button "View Pricing Plans"
+- contentinfo:
+  - img
+  - heading "Manan - Medical Triage Assistant" [level=3]
+  - paragraph: A clinically robust AI-powered assistant that delivers individualized, evidence-based triage recommendations in minutes. Optimize patient outcomes with zero cognitive overload.
+  - heading "Company" [level=3]
+  - link "About Us":
+    - /url: https://www.numpyninja.com/about
+  - link "Blog":
+    - /url: https://www.numpyninja.com/blog
+  - link "Contact Us":
+    - /url: https://www.numpyninja.com/contact
+  - paragraph: © 2025 Manan - Medical Triage Assistant
+  - link "Terms":
+    - /url: https://www.numpyninja.com/terms
+  - link "Privacy":
+    - /url: https://www.numpyninja.com/privacy-policy
+- region "Notifications (F8)":
+  - list
+```

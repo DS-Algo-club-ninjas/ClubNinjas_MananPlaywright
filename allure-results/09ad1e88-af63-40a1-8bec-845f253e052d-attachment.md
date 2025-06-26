@@ -1,0 +1,30 @@
+# Page snapshot
+
+```yaml
+- dialog "Welcome to MANAN":
+  - heading "Welcome to MANAN" [level=2]
+  - paragraph: Sign in to access your medical triage dashboard.
+  - button "Continue with Google":
+    - img
+    - text: Continue with Google
+  - text: Or continue with
+  - tablist:
+    - tab "Sign In"
+    - tab "Sign Up" [selected]
+  - tabpanel "Sign Up":
+    - text: Username
+    - textbox "Username": playwright1
+    - text: Email Address
+    - textbox "Email Address": playwright@gmail.com
+    - text: Password
+    - textbox "Password": numpyninja
+    - button:
+      - img
+    - text: Confirm Password
+    - textbox "Confirm Password": numpyninja
+    - button "Create Account"
+  - paragraph: By continuing, you agree to our Terms of Service and Privacy Policy.
+  - button "Close":
+    - img
+    - text: Close
+```

@@ -1,0 +1,5 @@
+******** BASE URL:  https://manan.numpyninja.com/
+******** USERNAME:  playwright
+******** PASSWORD:  numphyNinja@207
+*** PAGE URL After Signin https://manan.numpyninja.com/app
+*** PAGE URL After Signin https://www.numpyninja.com/terms
