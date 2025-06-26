@@ -1,4 +1,3 @@
-@only
 Feature: Manan LandingPage for Unauthenticated User
 
 Background: User is not sign in and able to land on the Manan Launch page

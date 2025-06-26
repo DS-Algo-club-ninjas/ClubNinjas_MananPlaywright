@@ -1,0 +1,4 @@
+******** BASE URL:  https://manan.numpyninja.com/
+******** USERNAME:  playwrightBDD4
+******** PASSWORD:  playwrightBDD4
+*** PAGE URL After Signin https://manan.numpyninja.com/
