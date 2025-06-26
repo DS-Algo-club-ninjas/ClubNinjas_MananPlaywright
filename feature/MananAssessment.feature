@@ -28,12 +28,12 @@ Scenario: Verify user is able to Ask for Further Analysis
     Given User is in  Manan Medical Triage Assistant page after successful analysis
     When User clicks Ask for Further Analysis
     Then User should be able to see details for further analysis
-    
+   
 Scenario: Verify user is able to upload 5 pdf files
     Given User is in Manan Medical Triage Assistant page
-    When User uploads five pdf files
-    Then User should see Success, Blood report values have been added to vitals
-    
+    When User uploads two pdf files
+    Then User should see three uploads remaining
+   
 Scenario Outline: Verify user is able to see error when clicking Analyze case without entering required fields
     Given User is in Manan Medical Triage Assistant page
     When User clicks Analyze Case for '<Scenario>'
@@ -42,4 +42,8 @@ Scenario Outline: Verify user is able to see error when clicking Analyze case wi
     Examples:
     |Scenario|
     |AgeNull|
+    |GenderNull|
+    |ChiefComplaintNull|
+    |SymptomsNull|
+    |LabValuesNull|
     

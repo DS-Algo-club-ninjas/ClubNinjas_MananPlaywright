@@ -8,17 +8,17 @@ export class CommonPage {
     }
 
     async gotoHomePage() {
-        await this.page.goto(process.env.MANAN_URL);
+        await this.page.goto(process.env.BASE_URL);
     }
 
     async clickSignIn() {
         await this.signInBtn.click();
     }
     async enterUsername() {
-        await this.usernameField.fill(process.env.MANAN_USERNAME);
+        await this.usernameField.fill(process.env.USER_NAME);
     }
     async enterPassword() {
-        await this.passwordField.fill(process.env.MANAN_PASSWORD);
+        await this.passwordField.fill(process.env.PASSWORD);
     }
     async clickLogin() {
         await this.loginBtn.click();
