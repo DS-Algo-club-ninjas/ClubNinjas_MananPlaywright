@@ -98,26 +98,26 @@ test.describe('Login with credentials', () => {
 
   test('Verify user is able to logout successfully', async ({ Given, dbPage, When, Then }) => { 
     await Given('The user is on the dashboard', null, { dbPage }); 
-    await When('The user clicks User profile icon and clicks Logout option'); 
-    await Then('The user should get "Session Ended" message and rediected to Manan signin Page'); 
+    await When('The user clicks User profile icon and clicks Logout option', null, { dbPage }); 
+    await Then('The user should get "Session Ended" message and rediected to Manan signin Page', null, { dbPage }); 
   });
 
   test('Verify user is able to directed to settings successfully', async ({ Given, dbPage, When, Then }) => { 
     await Given('The user is on the dashboard', null, { dbPage }); 
-    await When('The user clicks User profile icon and clicks  settings option'); 
-    await Then('The user should directed to "settings"page'); 
+    await When('The user clicks User profile icon and clicks  settings option', null, { dbPage }); 
+    await Then('The user should directed to "settings"page', null, { dbPage }); 
   });
 
   test('Verify user is able to directed to Previous Assessments successfully', async ({ Given, dbPage, When, Then }) => { 
     await Given('The user is on the dashboard', null, { dbPage }); 
-    await When('The user clicks User profile icon and clicks previous assessment option'); 
-    await Then('The user should directed to "Previous Assessments"page'); 
+    await When('The user clicks User profile icon and clicks previous assessment option', null, { dbPage }); 
+    await Then('The user should directed to "Previous Assessments"page', null, { dbPage }); 
   });
 
   test('Verify user is able to directed to subscription plans successfully', async ({ Given, dbPage, When, Then }) => { 
     await Given('The user is on the dashboard', null, { dbPage }); 
-    await When('The user clicks User profile icon and clicks subscription plans option'); 
-    await Then('The user should directed to "subscription plans"page'); 
+    await When('The user clicks User profile icon and clicks subscription plans option', null, { dbPage }); 
+    await Then('The user should directed to "subscription plans"page', null, { dbPage }); 
   });
 
 });

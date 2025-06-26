@@ -11,10 +11,13 @@ export class MananAssessmentPage {
         this.chiefComplaintTextbox = page.getByRole('textbox', { name: 'Chief Complaint' });
         this.detailedSymptomsTextbox = page.getByRole('textbox', { name: 'Detailed Symptoms' });
         this.fileUploadInput = page.locator('input[type="file"]');
+        this.labValuesTextbox = page.getByRole('textbox', { name: 'Vital Signs & Lab Values' });
         this.uploadSuccessMessage = page.locator('span[role="status"]');
         this.medicalHistoryTextbox = page.getByRole('textbox', { name: 'Medical History' });
         this.medicationsTextbox = page.getByRole('textbox', { name: 'Current Medications' });
         this.analyzeButton = page.getByRole('button', { name: 'Analyze Case' });
+        this.shareAnalysisButton = page.getByRole('button', { name: 'Share Analysis' });
+        this.askFurtherAnalysisButton = page.getByRole('button', { name: 'Ask for Further Analysis' });
 
     }
 
@@ -40,7 +43,7 @@ export class MananAssessmentPage {
     }
 
     async uploadBloodReport() {
-        await this.fileUploadInput.setInputFiles(path.join(__dirname, '../testData/CBC-sample.pdf'));
+        await this.fileUploadInput.setInputFiles(path.join(__dirname, '../testData/BloodReport1.pdf'));
         await expect(this.uploadSuccessMessage).toContainText('Blood report values have been added to vitals');
     }
 
@@ -54,6 +57,25 @@ export class MananAssessmentPage {
 
     async clickAnalyzeCase() {
         await this.analyzeButton.click();
+    }
+    
+    async enterLabValues(labvalues) {
+        await this.labValuesTextbox.fill(labvalues);
+    }
+
+    async uploadMultipleBloodReport() {
+        await this.fileUploadInput.setInputFiles([
+            path.join(__dirname, '../testData/BloodReport1.pdf'),
+            path.join(__dirname, '../testData/BloodReport2.pdf')
+        ]);
+    }
+
+    async clickShareAnalysis() {
+        await this.shareAnalysisButton.click();
+    }
+
+    async clickAskForFurtherAnalysis() {
+        await this.askFurtherAnalysisButton.click();
     }
 
 }

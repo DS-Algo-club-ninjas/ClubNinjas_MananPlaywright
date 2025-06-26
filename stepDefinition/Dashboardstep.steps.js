@@ -169,38 +169,42 @@ Then('The user should directed to "Privacy"page', async ({dbPage}) => {
   await expect(dbPage.URL).toMatch(process.env.PRIVACY_POLICY);
 });
 
-When('The user clicks User profile icon and clicks Logout option', async ({}) => {
- 
+When('The user clicks User profile icon and clicks Logout option', async ({dbPage}) => {
+         await dbPage.openProfileMenu();
+         await dbPage.clickLogout();
 });
 
-Then('The user should get {string} message and rediected to Manan signin Page', async ({}, arg) => {
-  
+Then('The user should get {string} message and rediected to Manan signin Page', async ({dbPage}, arg) => {
+  dbPage.URLReset();
+  await expect(dbPage.URL).toMatch(process.env.BASE_URL);
 });
 
-When('The user clicks User profile icon and clicks  settings option', async ({}) => {
- 
+When('The user clicks User profile icon and clicks  settings option', async ({dbPage}) => {
+        await dbPage.openProfileMenu();
+        await dbPage.clickSettings();
 });
 
-Then('The user should directed to "settings"page', async ({}) => {
-  
+Then('The user should directed to "settings"page', async ({dbPage}) => {
+  dbPage.URLReset();
+  await expect(dbPage.URL).toMatch(process.env.SETTINGS_PAGE);
 });
 
-When('The user clicks User profile icon and clicks previous assessment option', async ({}) => {
-  // Step: When The user clicks User profile icon and clicks previous assessment option
-  // From: tests\features\Dashboard.feature:96:5
+When('The user clicks User profile icon and clicks previous assessment option', async ({dbPage}) => {
+   await dbPage.openProfileMenu();
+   await dbPage.clickPreviousAssessments();
 });
 
-Then('The user should directed to "Previous Assessments"page', async ({}) => {
-  // Step: Then The user should directed to "Previous Assessments"page
-  // From: tests\features\Dashboard.feature:97:5
+Then('The user should directed to "Previous Assessments"page', async ({dbPage}) => {
+  dbPage.URLReset();
+  await expect(dbPage.URL).toMatch(process.env.PREVIOUS_ASSESMENTS);
 });
 
-When('The user clicks User profile icon and clicks subscription plans option', async ({}) => {
-  // Step: When The user clicks User profile icon and clicks subscription plans option
-  // From: tests\features\Dashboard.feature:101:5
+When('The user clicks User profile icon and clicks subscription plans option', async ({dbPage}) => {
+  await dbPage.openProfileMenu();
+  await dbPage.clickSubscriptionPlans();
 });
 
-Then('The user should directed to "subscription plans"page', async ({}) => {
-  // Step: Then The user should directed to "subscription plans"page
-  // From: tests\features\Dashboard.feature:102:5
+Then('The user should directed to "subscription plans"page', async ({dbPage}) => {
+   dbPage.URLReset();
+  await expect(dbPage.URL).toMatch(process.env.PREVIOUS_ASSESMENTS);
 });

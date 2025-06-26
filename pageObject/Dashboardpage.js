@@ -124,11 +124,11 @@ export class Dashboardpage{
   }
 
   async clickPreviousAssessments() {
-    await this.page.getByText('Previous Assessments', { exact: true }).click();
+    await this.previousAssessments.click();
   }
 
   async clickSubscriptionPlans() {
-    await this.page.getByLabel('P').getByText('Subscription Plans').click();
+    await this.subscriptionPlans.click();
   }
 
   async clickLogout() {
@@ -136,6 +136,6 @@ export class Dashboardpage{
   }
 
   async clickUsageText() {
-    await this.page.getByText('Track your AI analysis usage').click();
+    await this.usageText.click();
   }
 }

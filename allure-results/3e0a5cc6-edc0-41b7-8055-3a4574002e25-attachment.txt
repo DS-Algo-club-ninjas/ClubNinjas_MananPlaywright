@@ -1,0 +1,3 @@
+******** BASE URL:  https://manan.numpyninja.com/
+******** USERNAME:  playwright
+******** PASSWORD:  numphyNinja@207
