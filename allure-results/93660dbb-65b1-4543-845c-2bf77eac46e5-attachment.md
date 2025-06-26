@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Manan":
+    - /url: /app
+    - heading "Manan" [level=1]
+- heading "Subscription Plans" [level=1]
+- paragraph: Choose the plan that fits your needs.
+- heading "Free Plan Limited" [level=3]
+- text: $0/month
+- paragraph: Basic access to AI medical triage
+- img
+- paragraph: 20 AI analyses per month
+- img
+- paragraph: Basic triage assessments
+- img
+- paragraph: PDF export capabilities
+- img
+- paragraph: Limited access to premium resources
+- img
+- paragraph: Standard response time
+- button "Current Plan" [disabled]
+- heading "Premium Plan Recommended" [level=3]:
+  - text: Premium Plan
+  - img
+  - text: Recommended
+- text: $19.99/month
+- paragraph: Unlimited access to all premium features
+- img
+- paragraph: Unlimited AI analyses
+- img
+- paragraph: Advanced triage assessments
+- img
+- paragraph: Enhanced PDF reports
+- img
+- paragraph: Access to all premium resources
+- img
+- paragraph: Priority support
+- button "Subscribe Now":
+  - img
+  - text: Subscribe Now
+- heading "Your Subscription" [level=2]
+- 'heading "Current Plan: Free" [level=3]'
+- paragraph: "Status: Inactive"
+- button "Upgrade to Premium"
+- region "Notifications (F8)":
+  - list
+```
